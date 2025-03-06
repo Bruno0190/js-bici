@@ -20,7 +20,20 @@ const bici = [
     },
 ]
 
-bici.forEach(function(curBici, index) {
-    
+let biciLeggera = bici[0].peso;
+let biciPiuLeggera = bici[0].nome;
 
+bici.forEach(function(curBici, index) {
+
+    if (curBici.peso < biciLeggera) {
+
+        biciPiuLeggera = curBici.nome;
+        biciLeggera = curBici.peso; 
+
+    }
+    
 });
+
+let message = `${biciPiuLeggera} è la bici più leggera` 
+
+document.getElementById("message").innerText = message;
