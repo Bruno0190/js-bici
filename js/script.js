@@ -34,6 +34,6 @@ bici.forEach(function(curBici, index) {
     
 });
 
-let message = `${biciPiuLeggera} è la bici più leggera` 
+const message = `${biciPiuLeggera} è la bici più leggera` 
 
 document.getElementById("message").innerText = message;
